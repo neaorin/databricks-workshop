@@ -25,7 +25,7 @@ The setup for this workshop involves the following steps:
 1. [Log in to Microsoft Azure](#setup1)
 2. [Create an Azure storage account and upload the workshop data](#setup2)
 3. Get an Azure Databricks workspace
-    * 3a. [Create an Azure Databricks workspace and a Spark cluster](#setup3a), -or-
+    * 3a. [Create an Azure Databricks workspace and a Spark cluster](#setup3a), *or*
     * 3b. [Connect to an existing Azure Databricks Workspace](#setup3b)
 4. [Import the lab notebooks](#setup4)
 
