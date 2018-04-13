@@ -14,27 +14,30 @@ This is a hands-on workshop which will allow you to experiment with [Apache Spar
     - Sentiment Analysis on real-time Twitter data, with Spark Streaming
 3. Wrap-up
 
-## Requirements
+## Prerequisites
 
-The only requirement for this workshop is an active [Microsoft Azure](https://azure.microsoft.com/) subscription. Please ask your instructor for access to an Azure subscription, if you don't already have one available.
+The only prerequisite for this workshop is an active [Microsoft Azure](https://azure.microsoft.com/) subscription. Please ask your instructor for access to an Azure subscription, if you don't already have one available.
 
 ## Setup
 
 The setup for this workshop involves the following steps:
 
-1. Log in to Microsoft Azure
-2. Create an Azure storage account and upload the workshop data
+1. [Log in to Microsoft Azure](#setup1)
+2. [Create an Azure storage account and upload the workshop data](#setup2)
 3. Get an Azure Databricks workspace
-    * 3a. Create an Azure Databricks workspace and a Spark cluster, -or-
-    * 3b. Connect to an existing Azure Databricks Workspace 
-4. Import the lab notebooks
+    * 3a. [Create an Azure Databricks workspace and a Spark cluster](#setup3a), -or-
+    * 3b. [Connect to an existing Azure Databricks Workspace](#setup3b)
+4. [Import the lab notebooks](#setup4)
 
 The detailed steps are presented below.
 
+
+<a name="setup1"></a>
 ## 1. Log in to Microsoft Azure
 
 Log in to the [Azure portal](https://portal.azure.com).
 
+<a name="setup2"></a>
 ## 2. Create an Azure storage account and upload the workshop data
 
 An Azure storage account provides a unique namespace in the cloud to store and access your data objects in Azure Storage. A storage account contains any blobs, files, queues, tables, and disks that you create under that account. 
@@ -155,6 +158,7 @@ To upload a block blob to your new container in the Azure portal, follow these s
 > - *ratings.csv*
 > - *tags.csv*
 
+<a name="setup3a"></a>
 ## 3a. Create an Azure Databricks workspace and a Spark cluster
 
 In this section, you create an Azure Databricks workspace using the Azure portal. 
@@ -202,6 +206,7 @@ In this section, you create an Azure Databricks workspace using the Azure portal
 
 For more information on creating clusters, see [Create a Spark cluster in Azure Databricks](https://docs.azuredatabricks.net/user-guide/clusters/create.html).
 
+<a name="setup3b"></a>
 ## 3b. Connect to an existing Azure Databricks Workspace 
 
 As an alternative to creating a separate workspace and Spark cluster, you may work with an existing Azure Databricks workspace. Ask your instructor for the name of the workspace to use.
@@ -212,6 +217,7 @@ As an alternative to creating a separate workspace and Spark cluster, you may wo
 
 3. You are redirected to the Azure Databricks portal.
 
+<a name="setup4"></a>
 ## 4. Import the lab notebooks
 
 You will now import the Databricks notebooks which contain the lab exercises into the Azure Databricks workspace.
@@ -221,6 +227,14 @@ You will now import the Databricks notebooks which contain the lab exercises int
 
     ![Screen shot showing import Azure Datbricks](./media/databricks-import-1.png)
 
-3. Select URL, and paste in the following string: 
+3. Select **URL**, and paste in the following URL: 
 
-    ```https://github.com/neaorin/databricks-workshop/notebooks/workshop2018.dbc```
+    ```https://github.com/neaorin/databricks-workshop/raw/master/notebooks/workshop2018.dbc```
+
+    ![Screen shot showing import Azure Datbricks](./media/databricks-import-2.png)
+
+4. Click **Import**.
+
+Once the import is complete, you should see a new folder named **Databricks Workshop**. 
+
+At this point you can open any of the Databricks notebooks inside that folder, or its subfolders, and dive into the various lab topics.
