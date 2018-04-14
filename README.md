@@ -144,12 +144,9 @@ To upload a block blob to your new container in the Azure portal, follow these s
 2. Select the container to show a list of blobs it contains. In this case, since you created a new container, it won't yet contain any blobs.
 3. Click the **Upload** button to upload a blob to the container.
 4. Browse your local file system to find a file to upload as a block blob, and click **Upload**.
-     
-    ![Screenshot showing how to upload a blob from your local drive](https://docs.microsoft.com/en-us/azure/storage/blobs/media/storage-quickstart-blobs-portal/upload-blob.png)
-
 5. Upload all the CSV files from the MovieLens archive in the same way. You'll see that the new blobs are now listed within the container.
 
-    ![Screenshot showing the list of blobs in the container](https://docs.microsoft.com/en-us/azure/storage/blobs/media/storage-quickstart-blobs-portal/list-blobs.png)
+    ![Screenshot showing the list of blobs in the container](./media/create-storage-account-2.png)
 
 > [!NOTE]
 > You should upload the following  files from the MovieLens dataset archive:
@@ -169,13 +166,13 @@ In this section, you create an Azure Databricks workspace using the Azure portal
 
 3. Under **Azure Databricks Service**, provide the values to create a Databricks workspace.
 
-    ![Create an Azure Databricks workspace](https://docs.microsoft.com/en-us/azure/azure-databricks/media/quickstart-create-databricks-workspace-portal/create-databricks-workspace.png "Create an Azure Databricks workspace")
+    ![Create an Azure Databricks workspace](./media/databricks-create-1.png "Create an Azure Databricks workspace")
 
     Provide the following values: 
      
     |Property  |Description  |
     |---------|---------|
-    |**Workspace name**     | Provide a name for your Databricks workspace        |
+    |**Workspace name**     | use **mydbworkspaceNN**, where NN is your user id.        |
     |**Subscription**     | From the drop-down, select your Azure subscription.        |
     |**Resource group**     | Select the resource group you provisioned earlier. |
     |**Location**     | Select **East US**. For other available regions, see [Azure services available by region](https://azure.microsoft.com/regions/services/).        |
@@ -194,13 +191,14 @@ In this section, you create an Azure Databricks workspace using the Azure portal
 
 3. In the **New cluster** page, provide the values to create a cluster.
 
-    ![Create Databricks Spark cluster on Azure](https://docs.microsoft.com/en-us/azure/azure-databricks/media/quickstart-create-databricks-workspace-portal/create-databricks-spark-cluster.png "Create Databricks Spark cluster on Azure")
+    ![Create Databricks Spark cluster on Azure](./media/databricks-create-2.png "Create Databricks Spark cluster on Azure")
 
     Accept all other default values other than the following:
 
     * Enter a name for the cluster.
-    * For this workshop, create a cluster with **4.0** runtime. 
-    * Make sure you select the **Terminate after ____ minutes of inactivity** checkbox. Provide a duration (in minutes) to terminate the cluster, if the cluster is not being used.
+    * For this workshop, create a cluster with **4.0** runtime, and Python Version **3**. 
+    * Set Min Workers to **1** and Max Workers to **2** for this workshop.
+    * Make sure you select the **Standard_D3_v2** Worker Type, instead of the default *Standard_DS3_v2*.
     
     Select **Create cluster**. Once the cluster is running, you can attach notebooks to the cluster and run Spark jobs. 
 
@@ -225,16 +223,18 @@ You will now import the Databricks notebooks which contain the lab exercises int
 1. In the Azure Databricks workspace homepage, click **Home** from the left menu. 
 2. Inside your user home directory, right click and click **Import**.
 
-    ![Screen shot showing import Azure Datbricks](./media/databricks-import-1.png)
+    ![Screen shot showing import Azure Databricks](./media/databricks-import-1.png)
 
 3. Select **URL**, and paste in the following URL: 
 
     ```https://github.com/neaorin/databricks-workshop/raw/master/notebooks/workshop2018.dbc```
 
-    ![Screen shot showing import Azure Datbricks](./media/databricks-import-2.png)
+    ![Screen shot showing import Azure Databricks](./media/databricks-import-2.png)
 
 4. Click **Import**.
 
 Once the import is complete, you should see a new folder named **Databricks Workshop**. 
+
+![Screen shot showing import Azure Databricks](./media/databricks-import-3.png)
 
 At this point you can open any of the Databricks notebooks inside that folder, or its subfolders, and dive into the various lab topics.
