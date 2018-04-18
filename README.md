@@ -2,6 +2,8 @@
 
 This is a hands-on workshop which will allow you to experiment with [Apache Spark](https://spark.apache.org/) running in the [Azure Databricks](https://azure.microsoft.com/en-us/services/databricks/) platform. You’ll understand how you can use Spark and Azure Databricks to analyze large amounts of customer data, visualize the data to quickly spot patterns, use Spark’s Machine Learning library to generate predictions, and analyze real-time data from online sources (e.g. Twitter).
 
+A PowerPoint presentation of Azure Databricks used as an intro for this workshop can be found here: [Powerful Big Data Analytics as a Service, with Apache Spark and Azure Databricks](https://www.slideshare.net/SorinPeste/powerful-big-data-analytics-as-a-service-with-apache-spark-and-azure-databricks)
+
 ## Agenda
 
 1. Introduction to Apache Spark and Azure Databricks
