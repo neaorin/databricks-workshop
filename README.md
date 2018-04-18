@@ -18,7 +18,9 @@ A PowerPoint presentation of Azure Databricks used as an intro for this workshop
 
 ## Prerequisites
 
-The only prerequisite for this workshop is an active [Microsoft Azure](https://azure.microsoft.com/) subscription. Please ask your instructor for access to an Azure subscription, if you don't already have one available.
+The main prerequisite for this workshop is an active [Microsoft Azure](https://azure.microsoft.com/) subscription. Please ask your instructor for access to an Azure subscription, if you don't already have one available.
+
+If you plan on completing the Twitter data analysis lab, you'll also need a Twitter account.
 
 ## Setup
 
