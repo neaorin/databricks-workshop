@@ -104,6 +104,8 @@ To create a general-purpose v2 storage account in the Azure portal, follow these
 
 After your storage account is created, navigate to it in the Portal. Under **Settings**, select **Access keys**. Select the primary account access key and click the Copy button to copy the associated connection string to the clipboard. Then paste the string into a text editor for later use.
 
+![Screen shot showing storage account key in the Azure portal](./media/storage-account-key.png)
+
 ## Create a container
 
 A **container** organizes a set of blobs, similar to a folder in a file system. All blobs reside within a container. A storage account can contain an unlimited number of containers, and a container can store an unlimited number of blobs. Note that the container name must be lowercase.
