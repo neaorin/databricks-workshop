@@ -136,6 +136,10 @@ Users were selected at random for inclusion. All selected users had rated at lea
 
 1. Download the small dataset: [ml-latest-small.zip](http://files.grouplens.org/datasets/movielens/ml-latest-small.zip)
 
+    > [!NOTE]
+    > If the link above no longer works, you can also download the dataset from [this repository](data/ml-latest-small.zip).
+
+
 2. Unpack the ZIP archive to your local drive.
 
 ## Upload the MovieLens data to Azure Storage
@@ -233,7 +237,7 @@ You will now import the Databricks notebooks which contain the lab exercises int
 
 3. Select **URL**, and paste in the following URL: 
 
-    ```https://github.com/neaorin/databricks-workshop/raw/master/notebooks/workshop2018.dbc```
+    ```https://github.com/neaorin/databricks-workshop/raw/master/notebooks/workshop2019.dbc```
 
     ![Screen shot showing import Azure Databricks](./media/databricks-import-2.png)
 
