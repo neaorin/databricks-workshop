@@ -185,7 +185,7 @@ In this section, you create an Azure Databricks workspace using the Azure portal
     |**Workspace name**     | use **mydbworkspaceNN**, where NN is your user id.        |
     |**Subscription**     | From the drop-down, select your Azure subscription.        |
     |**Resource group**     | Select the resource group you provisioned earlier. |
-    |**Location**     | Select **East US**. For other available regions, see [Azure services available by region](https://azure.microsoft.com/regions/services/).        |
+    |**Location**     | Select any region you prefer. For available regions, see [Azure services available by region](https://azure.microsoft.com/regions/services/).        |
     |**Pricing Tier**     |  Choose  **Standard**. For more information on these tiers, see [Databricks pricing page](https://azure.microsoft.com/pricing/details/databricks/).       |
 
 
